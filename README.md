@@ -1,6 +1,6 @@
 # Flex Container
 
-The Flex Container is the tag that surrounds the flex items, when indicating display: flex, this tag becomes a Flex Container.
+The Flex Container is the tag that surrounds the flex items, when indicating display: `flex`, this tag becomes a Flex Container.
 
 ## 1. display
 
@@ -14,7 +14,7 @@ display: inline-flex;
 
 ## 2. flex-direction
 
-Sets the direction of flex items. By default it is row, so when display: flex; is added, the elements are in line, next to each other.
+Sets the direction of flex items. By default it is row, so when display: `flex`; is added, the elements are in line, next to each other.
 
 The change from row to column usually happens when we are defining styles in media queries for mobile. This ensures that the content is presented in a single column.
 
@@ -46,7 +46,7 @@ flex-wrap: wrap-reverse;
 
 ## 4. flex-flow
 
-flex-flow is a shortcut for the flex-direction and flex-wrap properties. You won't see it used much, because generally when we change flex-direction to column, we keep the flex-wrap default, which is nowrap.
+`flex-flow` is a shortcut for the flex-direction and flex-wrap properties. You won't see it used much, because generally when we change flex-direction to column, we keep the flex-wrap default, which is nowrap.
 
 And when we change flex-wrap to wrap, we keep the flex-direction default, which is row.
 
@@ -61,7 +61,7 @@ flex-flow: column nowrap;
 
 ## 5. justify-content
 
-Aligns the flex items in the container according to the direction. The property only works if the current items do not occupy the entire container. This means that when setting flex: 1; or something similar in the items, the property will no longer have a function.
+Aligns the flex items in the container according to the direction. The property only works if the current items do not occupy the entire container. This means that when setting `flex: 1`; or something similar in the items, the property will no longer have a function.
 
 Excellent property to be used in cases where you want to align one item on the left and another on the right, as in a simple header with branding and navigation.
 
@@ -99,7 +99,7 @@ align-items: baseline;
 
 ## 7. align-content
 
-Aligns the container lines in relation to the vertical axis. The property only works if there is more than one row of flex-items. To do this, the flex-wrap needs to be wrapped.
+Aligns the container lines in relation to the vertical axis. The property only works if there is more than one row of `flex-items`. To do this, the `flex-wrap` needs to be wrapped.
 
 Furthermore, its effect will only be seen if the container is larger than the sum of the item lines. This means that if you don't define height for the container, the property has no influence on the layout.
 
